@@ -68,7 +68,10 @@ class Authenticator {
                     '<link rel="preconnect" href="https://fonts.googleapis.com">'
                     '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>'
                     '<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">'
+                    '<div>'
                     '<div style="color: #FFD21F; position: relative; top:48%; width: 100%; text-align: center;">Login Realizado com sucesso! </div>'
+                    '<div style="color: #FFD21F; position: relative; top:30px; width: 100%; text-align: center; font-size: 2.2vw;">Aguarde. Você será redirecionado automaticamente. </div>'
+                    '</div>'
                     '<script>window.location.replace("coinbox://home");</script>'
                     '</html>');
               } else if (Platform.isIOS) {
@@ -76,7 +79,10 @@ class Authenticator {
                     '<link rel="preconnect" href="https://fonts.googleapis.com">'
                     '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>'
                     '<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">'
+                    '<div>'
                     '<div style="color: #FFD21F; position: relative; top:48%; width: 100%; text-align: center;">Login Realizado com sucesso! </div>'
+                    '<div style="color: #FFD21F; position: relative; top:30px; width: 100%; text-align: center; font-size: 2.2vw;">Aguarde. Você será redirecionado automaticamente. </div>'
+                    '</div>'
                     '<script>window.close();</script>'
                     '</html>');
               }
