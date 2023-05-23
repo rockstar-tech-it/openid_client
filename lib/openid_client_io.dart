@@ -64,24 +64,26 @@ class Authenticator {
               request.response.statusCode = 200;
               request.response.headers.set('Content-type', 'text/html');
               if (Platform.isAndroid) {
-                request.response.writeln('<html style="background-color: #541296; font: 5.2vw \'Inter\', sans-serif;">'
+                request.response.writeln('<html style="background-color: #E3B606; font: 5.2vw \'Inter\', sans-serif; text-align: center">'
                     '<link rel="preconnect" href="https://fonts.googleapis.com">'
                     '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>'
                     '<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">'
+                    '<div><img src="../img/success-vector.png" style="margin-top:100px; text-align: center"></div>'
                     '<div>'
-                    '<div style="color: #FFD21F; position: relative; top:48%; width: 100%; text-align: center;">Login Realizado com sucesso! </div>'
-                    '<div style="color: #FFD21F; position: relative; top:30px; width: 100%; text-align: center; font-size: 2.2vw;">Aguarde. Você será redirecionado automaticamente. </div>'
+                    '<div style="color: #FFD21F; margin-top:50px; width: 100%; text-align: center;">Login Realizado com sucesso! </div>'
+                    '<div style="color: #FFD21F; margin-top:30px; width: 100%; text-align: center; font-size: 2.2vw;">Aguarde. Você será redirecionado automaticamente. </div>'
                     '</div>'
                     '<script>window.location.replace("coinbox://home");</script>'
                     '</html>');
               } else if (Platform.isIOS) {
-                request.response.writeln('<html style="background-color: #541296; font: 5.2vw \'Inter\', sans-serif;">'
+                request.response.writeln('<html style="background-color: #E3B606; font: 5.2vw \'Inter\', sans-serif; text-align: center">'
                     '<link rel="preconnect" href="https://fonts.googleapis.com">'
                     '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>'
                     '<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">'
+                    '<div><img src="../img/success-vector.png" style="margin-top:100px; text-align: center"></div>'
                     '<div>'
-                    '<div style="color: #FFD21F; position: relative; top:48%; width: 100%; text-align: center;">Login Realizado com sucesso! </div>'
-                    '<div style="color: #FFD21F; position: relative; top:30px; width: 100%; text-align: center; font-size: 2.2vw;">Aguarde. Você será redirecionado automaticamente. </div>'
+                    '<div style="color: #FFD21F; margin-top:50px; width: 100%; text-align: center;">Login Realizado com sucesso! </div>'
+                    '<div style="color: #FFD21F; margin-top:30px; width: 100%; text-align: center; font-size: 2.2vw;">Aguarde. Você será redirecionado automaticamente. </div>'
                     '</div>'
                     '<script>window.close();</script>'
                     '</html>');
